@@ -23,10 +23,18 @@ public class Filme extends Programa {
 		return String.format("%02dh %02dmin", horas, minutos);
 	}
 
+	public int getDuracao() {
+		return duracao;
+	}
+
+	public void setDuracao(int duracao) {
+		this.duracao = duracao;
+	}
+
 	@Override
 	public String toString() {
 		return
 				super.toString() + "\n" +
-				"DuraÃ§Ã£o: " + this.formatTime() + "\n";
+				"Duração: " + this.formatTime() + "\n";
 	}
 }

@@ -6,6 +6,7 @@ import uteis.Categoria;
 import uteis.TipoPrograma;
 
 import static mensagens.Mensagens.colorGoodMessage;
+import static mensagens.Mensagens.colorQueryMessage;
 
 public abstract class Programa implements Classificar {
 
@@ -59,8 +60,8 @@ public abstract class Programa implements Classificar {
 	public String toString() {
 
 		return
-				colorGoodMessage("Nome: " + this.nome) +
-				"\nPontuaÃ§Ã£o: " + this.pontuacao +
+				colorQueryMessage("Nome: " + this.nome) +
+				"\nPontuação: " + this.pontuacao +
 				"\nCategoria: " + this.categoria.toString();
 	}
 }

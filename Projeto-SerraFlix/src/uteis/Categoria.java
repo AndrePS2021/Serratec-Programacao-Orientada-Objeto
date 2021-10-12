@@ -1,9 +1,11 @@
 package uteis;
 
+import mensagens.Mensagens;
+
 public enum Categoria {
-    COMEDIA("Comédia"),
-    FANTASIA("Fantasia"),
-    TERROR("Terror");
+    COMEDIA(Mensagens.Categorias.COMEDIA),
+    FANTASIA(Mensagens.Categorias.FANTASIA),
+    TERROR(Mensagens.Categorias.TERROR);
 
     private final String categoria;
 

@@ -5,7 +5,7 @@ import classes.*;
 import classes.exceptions.ClassificacaoForaDoRangeException;
 import classes.exceptions.InputException;
 import mensagens.Mensagens;
-import telas.menus.TelaInicial;
+import telas.telas.TelaInicial;
 import uteis.*;
 
 import static mensagens.Mensagens.colorGoodMessage;
@@ -17,11 +17,13 @@ public class App {
 
     public static void main(String[] args) {
 
-        // Apenas para Biblioteca n√£o come√ßar vazia. Pode excluir se quiser!
+        System.out.println(Categoria.COMEDIA);
+
+        // Apenas para Biblioteca n„o comeÁar vazia. Pode excluir se quiser!
         importarBibliotecaPadrao();
 
         TelaInicial telaInicial = new TelaInicial();
-        telaInicial.run(true, true, true, true);
+    	telaInicial.run(true, true, true, true);
     }
 
     public static Biblioteca getBiblioteca(){
